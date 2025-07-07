@@ -1,0 +1,157 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app {
+  margin-top: 50px;
+  width: 80%;
+}
+
+.hotelsContainer {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotelContent {
+  margin-top: 20px;
+  width: 60%;
+  min-width: 60%;
+  height: 300px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 13px -16px 42px -30px rgba(162, 162, 167, 1);
+  transition: all 0.3s ease;
+}
+
+.hotelImage {
+  width: 40%;
+  min-width: 40%;
+  height: 100%;
+  border-right: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 95%;
+  height: 95%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hotelDesc {
+  margin: 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.button {
+  background-color: #196f3a;
+  color: white;
+}
+
+.separator {
+  width: 100%;
+  height: 40%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  background-color: #196f3a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 80px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #145a2d;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .app {
+    width: 90%;
+    margin-top: 40px;
+  }
+  .hotelContent {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+  .hotelImage {
+    width: 100%;
+    height: 250px;
+    border-right: none;
+    border-bottom: 1px solid lightgray;
+  }
+  .imageContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .hotelDesc {
+    margin: 16px 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    width: 95%;
+    margin-top: 30px;
+  }
+  .hotelContent {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    box-shadow: none;
+    border: none;
+  }
+  .hotelImage {
+    height: 200px;
+    border-bottom: 1px solid lightgray;
+  }
+  .hotelDesc {
+    margin: 12px 16px;
+  }
+  .pagination {
+    gap: 12px;
+  }
+  .pagination button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .container {
+    margin: 10px 0 30px 0;
+  }
+}

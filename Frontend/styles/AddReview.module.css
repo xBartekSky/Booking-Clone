@@ -1,0 +1,42 @@
+.stars {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.star {
+  font-size: 28px;
+  color: #ccc;
+  transition: color 0.2s ease-in-out;
+}
+
+.filled {
+  color: #ffc107;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ffa000;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}
+
+.starLabel {
+  font-weight: bold;
+  margin-bottom: 4px;
+}

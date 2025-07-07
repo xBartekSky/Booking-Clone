@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  max-width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.descInput {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+.title {
+  color: #196f3a;
+}

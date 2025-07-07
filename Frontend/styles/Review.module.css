@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+}
+.reviewContainer {
+  width: 280px;
+  height: auto;
+  border: 1px solid #196f3a;
+  border-radius: 10px;
+}
+.stars {
+  padding: 10px;
+}
+.stars i {
+  color: #196f3a;
+}
+.reviewTitle {
+  height: 10%;
+
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.reviewTitle a {
+  color: #196f3a;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.reviewBody {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.reviewBody a {
+  color: black;
+}
+.reviewOwner {
+  height: 30%;
+
+  padding: 10px;
+}
+.reviewOwner a {
+  color: gray;
+  font-weight: bold;
+}

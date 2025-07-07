@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 36px;
+  color: #196f3a;
+}

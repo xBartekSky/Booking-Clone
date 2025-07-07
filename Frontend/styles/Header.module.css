@@ -1,0 +1,164 @@
+.header {
+  width: 100%;
+  height: 8vh;
+  background-color: #196f3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.25rem;
+}
+
+.headerSection {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  padding-left: 0.625rem;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.faqContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.faqButton,
+.languageButton {
+  background-color: #196f3a;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.faqButton:focus,
+.languageButton:focus {
+  outline: none;
+}
+
+.faqButton:hover,
+.languageButton:hover {
+  outline: none;
+  box-shadow: none;
+  background-color: #6ea74e;
+}
+
+.headerTitle {
+  color: White;
+  font-size: 1.875rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.headerTitle:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.accountContainer {
+  display: flex;
+  align-items: center;
+}
+
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.625rem;
+}
+
+.shareHotel {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.accountIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: White;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accountImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.userName {
+  color: white;
+  font-weight: bold;
+}
+
+.userOptions {
+  color: orange;
+}
+
+.loginButton {
+  background-color: #6ea74e;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    padding: 0.625rem 0;
+  }
+  .headerSection {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  .logoContainer {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .faqContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .accountContainer {
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .profileDetails {
+    padding-left: 0;
+    align-items: center;
+  }
+  .headerTitle {
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  .accountIcon {
+  }
+  .userName {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .headerTitle {
+    font-size: 1.125rem;
+  }
+  .accountIcon {
+  }
+}

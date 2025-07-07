@@ -1,0 +1,50 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.circleWrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.circleBg {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 10;
+}
+
+.circleProgress {
+  fill: none;
+  stroke: #22c55e;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #16a34a;
+  text-align: center;
+}

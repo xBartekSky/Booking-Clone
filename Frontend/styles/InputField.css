@@ -1,0 +1,62 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.inputLabel {
+  color: gray;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: gray solid 1px;
+  font-size: 1rem;
+  outline: none;
+  height: 35px;
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border: #6ea74e solid 1px;
+  box-shadow: 0 0 0 1px #6ea74e;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .input {
+    font-size: 0.95rem;
+    height: 32px;
+  }
+
+  .inputLabel {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .input {
+    font-size: 0.9rem;
+    height: 30px;
+  }
+
+  .inputLabel {
+    font-size: 0.8rem;
+  }
+}
+.input-error {
+  border-color: red !important;
+}
+.errorText {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}

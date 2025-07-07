@@ -1,0 +1,10 @@
+.helloTitle {
+  color: #196f3a;
+  font-size: 2.25rem;
+}
+
+@media (max-width: 576px) {
+  .helloTitle {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+
+  background-color: #f8f9fa; /* jaśniejsze tło dla kontrastu */
+}
+
+.app {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px; /* padding by nic nie kleiło się do krawędzi */
+}
+
+.panel {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.helloContainer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.dashboardContent {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.contents {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contentTitle {
+  font-size: 24px;
+}
+
+.content {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(25, 111, 58, 0.1);
+  padding: 25px 20px;
+  flex: 1 1 28%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.content:hover {
+  box-shadow: 0 20px 40px rgba(110, 167, 78, 0.25);
+  transform: translateY(-8px);
+}
+
+.contentButton {
+  padding: 14px 0;
+  background: linear-gradient(135deg, #6ea74e 0%, #196f3a 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 18px rgba(25, 111, 58, 0.6);
+}
+
+.contentButton:hover {
+  background: linear-gradient(135deg, #196f3a 0%, #6ea74e 100%);
+  box-shadow: 0 10px 30px rgba(25, 111, 58, 0.9);
+}
+.contentButton:focus {
+  outline: none;
+}
+
+.contentButton:hover {
+  background-color: #333;
+}
+
+@media (max-width: 1024px) {
+  .panel {
+    width: 80%;
+  }
+
+  .content {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .panel {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .helloContainer {
+    height: auto;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .contents {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .content {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contentTitle {
+    font-size: 20px;
+  }
+
+  .contentButton {
+    font-size: 14px;
+    height: 36px;
+  }
+}

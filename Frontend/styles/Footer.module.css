@@ -1,0 +1,205 @@
+.container {
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ad {
+  width: 100%;
+  background-color: #196f3a;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.adContent {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.labelContainer {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adLabel {
+  color: white;
+  font-size: 36px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.panel {
+  width: 50%;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  height: 300px;
+}
+
+.social {
+  width: 50%;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.pageTitle {
+  width: 100%;
+  height: 80%;
+}
+
+.title {
+  color: gray;
+  font-size: 36px;
+}
+
+.title:hover {
+  color: #196f3a;
+}
+
+.helpContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.help {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.help a {
+  color: gray;
+}
+
+.socialIcons {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  gap: 10px;
+}
+
+.socialIcons i {
+  color: gray;
+}
+
+.socialIcons i:hover {
+  color: #196f3a;
+}
+@media (max-width: 1024px) {
+  .adContent {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .labelContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .social {
+    width: 90%;
+    padding-left: 0;
+  }
+
+  .helpContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .help {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .help a {
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .pageTitle h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .adLabel {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .adContent {
+    width: 100%;
+  }
+
+  .adLabel {
+    font-size: 20px;
+  }
+
+  .buttons button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .socialIcons {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .adContent {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .labelContainer,
+  .buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}

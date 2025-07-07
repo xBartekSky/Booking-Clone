@@ -1,0 +1,111 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  min-width: 600px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .form {
+    max-width: 90%;
+    min-width: unset;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 0.8rem;
+    gap: 1rem;
+  }
+
+  .form h2 {
+    font-size: 1.2rem;
+  }
+
+  .saveButton,
+  .cancelButton {
+    flex: 1;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+.form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.form input {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.saveButton {
+  padding: 0.6rem 1.2rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.saveButton:hover {
+  background-color: #005fd1;
+}
+
+.cancelButton {
+  padding: 0.6rem 1.2rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: #e0e0e0;
+}
